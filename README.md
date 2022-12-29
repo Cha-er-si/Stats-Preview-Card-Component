@@ -20,8 +20,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-component-JlXCX_JaXy)
-- Live Site URL: [Add live site URL here](https://nft-preview-card-component-charles.netlify.app/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/stats-preview-card-component-msDtpAkeCv)
+- Live Site URL: [Add live site URL here](https://stats-preview-card-component-charles.netlify.app/)
 
 ## My process
 
