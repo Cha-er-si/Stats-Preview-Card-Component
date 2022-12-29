@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+  --font: 15px;
+
+  --inter: "Inter", sans-serif;
+  --lexend: "Lexend Deca", sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  padding: 50px 10px;
+  background-color: var(--very-dark-blue);
+}
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .image {
+  width: 100%;
+  position: relative;
+}
+
+.container .image::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--soft-violet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  object-fit: contain;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: contain;
+}
+
+.container .header {
+  color: var(--white);
+  font-family: var(--inter);
+  text-align: center;
+  font-size: var(--font);
+  padding: 10px 25px;
+}
+.container .header-text span {
+  color: var(--soft-violet);
+}
+.container .description {
+  color: var(--slightly-transparent-white);
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.container .header .statistics p:last-child {
+  text-transform: uppercase;
+  font-family: var(--lexend);
+  font-weight: lighter;
+  color: var(--slightly-transparent-white);
+  font-size: smaller;
+}
+.container .header .statistics .items:last-child p:first-child {
+  text-transform: uppercase;
+}
+.container .statistics .items p {
+  margin: 0;
+}
+
+.container .statistics .items p:first-child {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.container .statistics .items p:last-child {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 100px;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .container .header {
+    text-align: left;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container .statistics {
+    display: flex;
+  }
+  .container .statistics .items {
+    padding-right: 50px;
+  }
+}
